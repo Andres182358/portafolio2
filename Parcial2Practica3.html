@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinepolis</title>
+</head>
+<body>
+    <h1 align="center">Compra de Boletos</h1>
+    <form method="post" enctype="text/plain" action="">
+        <fieldset>
+            <legend>Registro de cliente</legend>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="AP">Apellidos:</label>
+            <input type="text" name="AP" id="AP">
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad"><br>
+
+            <br><label for="user">Usuario:</label>
+            <input type="text" name="user" id="user">
+
+            <label for="contra">Contraseña:</label>
+            <input type="password" name="contra" id="contra">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+        <fieldset>
+            <legend>Boletos:</legend>
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado" list="estados">
+                 <datalist id="estados">
+                    <option>CDMX</option>
+                    <option>San Luis Potosí</option>
+                    <option>Aguascalientes</option>
+                    <option>Guadalajara</option>
+                 </datalist><br>
+            <br><label for="sucursal">Sucursal:</label>
+            <input type="text" name="sucursal" id="sucursal" list="sucursales">
+                 <datalist id="sucursales">
+                    <option>Sucursal Centro</option>
+                    <option>Sucursal Norte</option>
+                    <option>Sucursal Sur</option>
+                    <option>Sucursal Este</option>
+                    <option>Sucursal Oeste</option>
+                 </datalist><br>
+            <h3>Peliculas:</h3>
+            
+            <label for="dia">Dia</label>
+            <input type="date" name="dia" id="dia"><br>
+            
+            <label for="hora">Horario:</label>
+            <input type="time" name="hora" id="hora"><br>
+
+            <select size="5" multiple>
+                <optgroup label="Estrenos:">
+                    <option value="1">Scream 6</option>
+                    <option value="2">Mario Bros</option>
+                    <option value="3">65 al Borde de la Extinción</option>
+                    <option value="4">Academia de conejos</option>
+                    <option value="5">EO</option> 
+                </optgroup>
+                <optgroup label="Preventas">
+                    <option value="6">Shazam</option>
+                    <option value="7">Demon Slayer</option>
+                    <option value="8">Met NY Lohengrin</option>
+                </optgroup>
+                <optgroup label="Cartelera">
+                    <option value="9">La ballena</option>
+                    <option value="10">Las momias y el articulo perdido</option>
+                    <option value="11">Nada que ver</option>
+                    <option value="12">Ant Man</option>
+                    <option value="13">Creed III</option>
+                </optgroup>
+            </select><br>
+        </fieldset>
+
+
+
+
+
+    </form>
+</body>
+</html>
