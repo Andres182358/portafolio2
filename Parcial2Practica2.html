@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+</head>
+<body>
+    <h1 align="center">Tienda de Ropa Online</h1>
+    <form method="post" action="" enctype="text/plain">
+        <fieldset>
+            <table align="center" width="70%">
+                <legend>Informacion del Cliente</legend>
+                <tr>
+                    <td><label for="nombre"></label>Nombre:</td>
+                    <td><label for="ap">Apellido paterno:</label></td>
+                    <td><label for="am">Apellido materno:</label></td>    
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Nombre" name="nombre" id="nombre" required></td>
+                    <td><input type="text" placeholder="Apellido paterno" name="ap" id="ap" required> </td>
+                    <td><input type="text" placeholder="Apellido materno" name="am" id="am" required> </td>
+                </tr>   
+                <tr>
+                    <td><label for="usuario">Nombre del usuario:</label></td>
+                    <td><label for="Contra">Contraseña:</label></td>
+                    
+                </tr> 
+                <tr>  
+                    <td><input type="text" placeholder="Usuario" nmae="usuario" id="usuario"></td>
+                    <td><input type="password" placeholder="Contraseña" name="contra" id="contra"></td>
+                </tr>  
+            </table>  
+        </fieldset>
+        <fieldset>
+            <table align="center" width="70%">
+                <legend>Datos de facturacion</legend>
+                <tr>
+                    <td><label for="calle">Calle:</label></td>
+                    <td><label for="Numext">Num:</label></td>
+                    <td><label for="colonia">Colonia</label></td>
+                </tr>
+                <tr>
+                   <td><input type="text" placeholder="Calle" name="calle" id="calle"></td> 
+                   <td><input type="number" placeholder="Num. Exterior" name="Numext" id="Numext"></td>
+                   <td><input type="text" placeholder="Colonia" name="colonia" id="colonia"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail</label></td>
+                    <td><label for="cp">Código Postal:</label></td>
+                    <td><label for="RFC">RFC:</label></td>
+                </tr>
+                <tr>
+                   <td><input type="email" placeholder="E-mail" name="email" id="email" required></td> 
+                   <td><input type="number" placeholder="C.P." name="cp" id="cp"></td>
+                   <td><input type="text" placeholder="RFC" name="RFC" id="RFC"></td>
+                </tr>   
+                <tr>
+                    <td><label for="Hora">Fecha de la venta: </label> <input type="date" name="Hora" id="Hora"></td>
+                </tr> 
+            </table>
+        </fieldset>
+        <fieldset>
+            <table align="center" width="70%">
+                <legend>Datos del articulo adquirido</legend>
+                <tr>
+                    <td><label for="Tipo">Tipo</label></td>
+                    <td><label for="Talla">Talla</label></td>
+                    <td><label for="Color">Selecciona el color</label></td>
+                </tr>
+                    <td>
+                        <select size="5">
+                                <option>Vestido</option>
+                                <option>Falda</option>
+                                <option>Pantalón</option>
+                                <option>Playera</option>
+                                <option>Camisa</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Chico" id="Chico">
+                        <label for="Chico">Chico</label><br>
+                        <input type="checkbox" name="Mediano" id="Mediano">
+                        <label for="Mediano">Mediano</label><br>
+                        <input type="checkbox" name="grande" id="grande">
+                        <label for="grande">Grande</label>
+                    </td>
+                    <td><input type="color" name="Color" id="Color"><br><br><input type="submit" name="enviar" id="enviar" value="Enviar Formulario"><input type="reset" name="borrar" id="borrar" value="Borrar datos"> </td>
+            </table>
+        </fieldset>
+    </form>
+    <h4 align="right"><b>© Distribuidora de ropa en línea 2023.</b></h4>
+</body>
+</html>
