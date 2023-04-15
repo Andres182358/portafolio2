@@ -1,0 +1,82 @@
+.container {
+position: absolute;
+top: 0;
+right: 0;
+background-color: white;
+padding: 5px;
+width: auto; /* ancho del cuadro */
+margin-top: 8px; /* margen de separación de arriba */
+margin-right: 8px; /* margen de separación de la derecha */
+border-radius: 10px;
+}
+
+.text {
+color: black;
+text-align: center;
+font-family: 'letra1';
+}
+
+  .menu {
+    position: absolute;
+    top: 1;
+    left: 2;
+    background-color: #a2d2e5;
+    padding: 10px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .menu li {
+    display: inline;
+    margin-right: 5px;
+    position: relative; /* Añadimos posición relativa para los submenús */
+    font-family: 'letra2';
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+  }
+  
+  .menu a:hover {
+    background-color: #ff41d6;
+    color: #f8f8f8;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #48c8d1;
+    padding: 5px;
+    left: 0; 
+    top: 100%; 
+  }
+  
+  .submenu ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  .submenu li {
+      color: rgb(255, 0, 170);
+    margin-bottom: 5px; 
+  }
+  
+  .menu li:hover .submenu {
+    display: block;
+  }
+@font-face {
+    font-family: 'letra1';
+    src: url(Orbitron-VariableFont_wght.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'letra2';
+    src: url(Lobster-Regular.ttf) format(truetype);
+}
