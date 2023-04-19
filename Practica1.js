@@ -29,9 +29,9 @@ function division(){
 function posinegati(){
     var num=prompt("Escribe un numero: ","")
     if (num>=0){
-        alert("El numero es positivo :D")
+        alert("El numero es positivo 🥵")
     }else{
-        alert("El numero es negativo D:")
+        alert("El numero es negativo 😥")
     }
         
 }
