@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Ventas', 'Gastos'],
+          ['2015',  1000,      400],
+          ['2016',  1170,      460],
+          ['2017',  660,       1120],
+          ['2018',  1030,      540],
+          ['2019',  1100,      740],
+          ['2020',  1200,      640],
+          ['2021',  1800,      840],
+          ['2022',  2030,      940]
+        ]);
+
+        var options = {
+          title: 'Datos Modificados',
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#200'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+  </body>
+</html>
