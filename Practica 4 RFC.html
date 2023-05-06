@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4</title>
+    <script src="Practica 4 RFC.js"></script>
+</head>
+<body>
+    <h1>Generador de RFC</h1>
+    <form method="post" enctype="text/plain">
+        <label for="nombre">Escribe tu nombre:</label><br>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label for="AP">Escribe tu apellido paterno:</label><br>
+        <input type="text" name="AP" id="AP"><br>
+        <label for="AM">Escribe tu apellido materno:</label><br>
+        <input type="text" name="AM" id="AM"><br>
+        <label for="year">Escribe tu año de nacimiento:</label><br>
+        <input type="number" name="year" id="year"><br>
+        <label for="MES">Escribe tu mes de nacimiento:</label><br>
+        <input type="number" name="MES" id="MES"><br>
+        <label for="day">Escribe tu dia de nacimiento:</label><br>
+        <input type="number" name="day" id="day"><br>
+        <label for="resultado">Resultado:</label><br>
+        <input type="text" name="resultado" id="resultado"><br><br>
+        <input type="button" name="resul" id="resul"   value="Generar RFC" onclick="result()">
+    </form>
+</body>
+</html>
