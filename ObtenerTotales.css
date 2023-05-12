@@ -1,0 +1,14 @@
+*{
+    background-color: azure;
+}
+input{
+    background-color: brown;
+    color: whitesmoke;
+}
+h1{
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
